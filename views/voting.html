@@ -1,0 +1,69 @@
+<div ng-controller="ClassController" ng-submit="savevote()">
+    <div class="row">
+        <div class="panel panel-danger">
+            <div class="panel-heading" style="text-align: center">SPL</div>
+            <div class="panel-body">
+                <form name='vote'>
+                    <ul class="list-group">
+                        <li ng-repeat="x in SPL" class="list-group-item">
+                            <input type="radio" id="option{{$NAME}}" value="{{NAME}}" name="option" ng-model="SPL">
+                            <label for="option{{$NAME}}">{{x.CLASS}} {{x.NAME}}</label>
+                        </li>
+                    </ul>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="panel panel-warning" style="float: left; width:45%;">
+            <div class="panel-heading" style="text-align: center">ASPL EM</div>
+            <div class="panel-body">
+                <form name='vote'>
+                    <ul class="list-group">
+                        <li ng-repeat="x in ASPL1EM" class="list-group-item">
+                            <input type="radio" id="option{{$NAME}}" value="{{NAME}}" name="option" ng-model="ASPL1EM">
+                            <label for="option{{$NAME}}">{{x.CLASS}} {{x.NAME}}</label>
+                        </li>
+                    </ul>
+            </div>
+        </div>
+        <div class="panel panel-warning" style="float: right; width:45%;">
+            <div class="panel-heading" style="text-align: center">ASPL TM</div>
+            <div class="panel-body">
+                <form name='vote'>
+                    <ul class="list-group">
+                        <li ng-repeat="x in ASPL1TM" class="list-group-item">
+                            <input type="radio" id="option{{$NAME}}" value="{{NAME}}" name="option" ng-model="ASPL1TM">
+                            <label for="option{{$NAME}}">{{x.CLASS}} {{x.NAME}}</label>
+                        </li>
+                    </ul>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="panel panel-success" style="float: left; width:45%">
+            <div class="panel-heading" style="text-align: center">ASPL 2 EM</div>
+            <div class="panel-body">
+                <form name='vote'>
+                    <ul class="list-group">
+                        <li ng-repeat="x in ASPL2EM" class="list-group-item">
+                            <input type="radio" id="option{{$NAME}}" value="{{NAME}}" name="option" ng-model="ASPL2EM">
+                            <label for="option{{$NAME}}">{{x.CLASS}} {{x.NAME}}</label>
+                        </li>
+                    </ul>
+            </div>
+        </div>
+        <div class="panel panel-success" style="float: right; width: 45%">
+            <div class="panel-heading" style="text-align: center">ASPL 2 TM</div>
+            <div class="panel-body">
+                <form name='vote'>
+                    <ul class="list-group">
+                        <li ng-repeat="x in ASPL2TM" class="list-group-item">
+                            <input type="radio" id="option{{$NAME}}" value="{{NAME}}" name="option" ng-model="ASPL2TM">
+                            <label for="option{{$NAME}}">{{x.CLASS}} {{x.NAME}}</label>
+                        </li>
+                    </ul>
+            </div>
+        </div>
+    </div>
+    <button style="position: relative; left: 48%;" class="btn btn-success" type="submit"  ng-disabled="!vote.$valid">Submit</button>
+</div>
