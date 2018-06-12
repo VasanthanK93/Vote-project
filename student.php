@@ -1,0 +1,1 @@
+[{"type":"SPL","CLASS":"XI-A2","NAME":"A. RIZWANA FATHIMA"},{"type":"SPL","CLASS":"XI-A2","NAME":"B. SWATHI"},{"type":"SPL","CLASS":"XI-C3","NAME":"Y. MOETHIRA DEVI"},{"type":"ASPL-IX EM","CLASS":"IX-F","NAME":"S. RAMYA"}]
